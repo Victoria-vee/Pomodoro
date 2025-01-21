@@ -1,0 +1,277 @@
+/* CSS Reset */
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    color:#170f11;
+    background-color: white;
+}
+/*Styling navbar */
+header{
+    background-color: #f9f4f5;
+    display:flex; 
+    justify-content: start;
+    align-items: center;
+    border-radius: 5px;
+    padding:0 10px;
+    margin: 10px 0;
+    
+}
+
+header a{
+    font-size:16px;
+    padding:15px;
+}
+
+header a:link {
+    text-decoration: none;
+    color:#170f11;
+}
+
+header a:visited{
+    text-decoration: none;
+    color:#170f11;
+}
+
+header a:hover{
+    border: 1px #c8b8d8 solid;
+    background-color: #EDE5EF;
+    
+}
+
+/* .account-creation{
+    display: flex;
+    justify-content: space-between;
+    gap:5px;
+    align-items: center;
+} */
+
+/* #sign-up{
+    padding:5px;
+    border-radius: 5px;
+    background-color: #8c7aa9;
+    border: 1px #502f4c solid;
+    font-size: 20px;
+
+}
+
+#log-in{
+    padding:5px;
+    border-radius: 5px;
+    background-color: #70587c;
+    border: 1px #502f4c solid;
+} */
+
+/* Styling the main container */
+.main-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: start;
+    padding:30px;
+    background-color: #FFFCF9;
+    /* border: 1px #502f4c solid; */
+    
+}
+
+/* Styling the timer */
+.timer-container{
+    background-color:#f9f4f5 ;
+    border: 1px #502f4c solid;
+    border-radius:5px;
+    padding:10px;
+}
+
+h1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 130px;
+    border:1px #502f4c solid;
+    border-radius: 5px;
+    background-color: #F3EDF2;
+    padding:50px;
+    margin:0 30px;
+}
+
+/* Styling Start and reset button */
+.time-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px 60px;    
+}
+
+.start{
+    background-color: #c2b6bf;
+    border-radius: 3px;
+    font-size: 30px;
+    padding:5px 15px;
+    margin:10px;
+
+}
+
+.time-buttons button:hover{
+    background-color: #B5A6B9;
+}
+
+.reset{
+    background-color:#DACFDF;
+    border-radius: 3px;
+    font-size: 30px;
+    padding:5px 15px;
+    margin:10px;
+}
+
+/* Styling Task Container */
+.task-container{
+    background-color: #f9f4f5;
+    border: 1px #502f4c solid;
+    border-radius:5px;
+    padding:10px;
+    flex:1;
+    margin-left:30px;
+}
+
+.tasks{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding:20px;
+}
+
+#task-input{
+    border:none;
+    border-radius:5px;
+    padding:15px;
+    margin:0 30px;
+    font-size: 20px;
+    width: 100%;
+    max-width: 100%;
+    background-color: #FFFCF9;   
+}
+
+footer{
+    background-color: #f9f4f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    margin-top:50px;
+    padding:70px 30px 0;
+    font-size: 10px;
+}
+
+.social-handles{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: left;
+    gap:5px;
+    line-height: 0.5px;
+    letter-spacing: 0.5px;
+    font-size:12px;
+}
+
+.social-handles a{
+
+    padding-bottom: 5px;
+}
+
+.social-handles a:link{
+    text-decoration: none;
+    color: #170f11;
+}
+
+.social-handles a:visited{
+    text-decoration: none;
+    color:#170f11;
+}
+
+.fa-brands{
+    padding-right:3px;
+}
+
+.credits{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+} 
+
+@media (max-width:768px) {
+    header{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 15px;
+    }
+
+    header a{
+        font-size:10px;
+        padding:10px;
+    }
+
+    .main-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+        padding:0;
+        border:none;
+        background-color: white;
+        
+    }
+
+    /* .timer-container{
+        border:none;
+    } */
+
+    .time{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 70px;
+        /* border:1px #502f4c solid; */
+        border-radius: 5px;
+        background-color: #F3EDF2;
+        
+    }
+
+    .time-buttons{
+        margin:10px 30px;
+    }
+
+    .start, .reset{
+        font-size:25px;
+        padding:5px 15px;
+        margin:0px;
+    }
+
+    .task-container{
+        margin-left: 0;
+        /* border:none; */
+    }
+
+    .tasks{
+        padding:10px;
+
+    }
+
+    .credits{
+        text-align: center;
+    }
+
+
+   
+}

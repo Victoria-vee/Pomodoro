@@ -1,0 +1,159 @@
+/* CSS Reset */
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    color:#170f11;
+    background-color: white;
+}
+/*Styling navbar */
+header{
+    background-color: #f9f4f5;
+    display:flex; 
+    justify-content: start;
+    align-items: center;
+    border-radius: 5px;
+    padding:0 10px;
+    margin-bottom: 10px;
+    
+}
+
+header a{
+    font-size:16px;
+    padding:15px;
+}
+
+header a:link {
+    text-decoration: none;
+    color:#170f11;
+}
+
+header a:visited{
+    text-decoration: none;
+    color:#170f11;
+}
+
+header a:hover{
+    border: 1px #c8b8d8 solid;
+    background-color: #EDE5EF;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border:1px #502f4c solid;
+    border-radius: 5px;
+    background-color: #F3EDF2;
+    padding: 20px 40px;
+    margin: 40px;
+}
+
+.setting-item{
+    border: 1px #502f4c solid;
+    border-radius: 5px;
+    width: 100%;
+    margin:10px 0;
+    padding:10px 5px;
+    border: 1px #c8b8d8 solid;
+    background-color: #EDE5EF;
+}
+
+.setting-item h3{
+    margin:0;
+    padding:0;
+    font-size: 15px;
+}
+
+.setting-item p{
+    margin: 0;
+    padding-top: 5px;
+    font-size: 10px;
+    
+}
+
+#toggle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon{
+    padding-right: 20px;
+}
+
+/* Styling the footer */
+footer{
+    background-color: #f9f4f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    margin-top:50px;
+    margin-bottom: 15px;
+    padding:70px 30px 0;
+    font-size: 10px;
+}
+
+.social-handles{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: left;
+    gap:5px;
+    line-height: 0.5px;
+    letter-spacing: 0.5px;
+    font-size:12px;
+}
+
+.social-handles a{
+    padding-bottom: 5px;
+}
+
+.social-handles a:link{
+    text-decoration: none;
+    color: #170f11;
+}
+
+.social-handles a:visited{
+    text-decoration: none;
+    color:#170f11;
+}
+
+.fa-brands{
+    padding-right:3px;
+}
+
+.credits{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+} 
+
+@media (max-width:430px) {
+    header{
+        display:flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 35px;
+    }
+
+    header a{
+        font-size:10px;
+        padding:10px;
+        text-align: center;
+    }
+
+    .container{
+        margin: 0;
+    }
+
+    .credits{
+        text-align: center;
+    }
+}

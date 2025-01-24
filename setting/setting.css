@@ -1,3 +1,16 @@
+/* Default Theme */
+:root{
+    --background-color:#f9f4f5;
+    --body-background-color:white;
+    --text-color:#170f11;
+    --header-hover-border-color:#c8b8d8;
+    --header-hover-background-color:#ede5ef;
+    --container-background-color:#f3edf2;
+    --border-color:#502f4c;
+    --setting-background-color:#ede5ef; 
+}
+
+
 /* CSS Reset */
 body{
     margin:0;
@@ -5,11 +18,11 @@ body{
     box-sizing: border-box;
     font-family: Helvetica, Arial, sans-serif;
     color:#170f11;
-    background-color: white;
+    background-color: var(--body-background-color);
 }
 /*Styling navbar */
 header{
-    background-color: #f9f4f5;
+    background-color: var(--background-color);
     display:flex; 
     justify-content: start;
     align-items: center;
@@ -26,17 +39,17 @@ header a{
 
 header a:link {
     text-decoration: none;
-    color:#170f11;
+    color:var(--text-color);
 }
 
 header a:visited{
     text-decoration: none;
-    color:#170f11;
+    color:var(--text-color);
 }
 
 header a:hover{
-    border: 1px #c8b8d8 solid;
-    background-color: #EDE5EF;
+    border: 1px var(--header-hover-background-color) solid;
+    background-color: var(--header-hover-background-color);
     
 }
 
@@ -45,21 +58,20 @@ header a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    border:1px #502f4c solid;
+    border:1px var(--border-color) solid;
     border-radius: 5px;
-    background-color: #F3EDF2;
+    background-color: var(--container-background-color);
     padding: 20px 40px;
     margin: 40px;
 }
 
 .setting-item{
-    border: 1px #502f4c solid;
+    border: 1px var(--border-color) solid;
     border-radius: 5px;
     width: 100%;
     margin:10px 0;
     padding:10px 5px;
-    border: 1px #c8b8d8 solid;
-    background-color: #EDE5EF;
+    background-color: var(--setting-background-color);
 }
 
 .setting-item h3{

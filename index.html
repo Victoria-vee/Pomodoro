@@ -23,11 +23,12 @@
         <div class="timer-container">
             <h1>Round 1</h1>
             <div class="time">
-                00:00
+                <span id="time">25:00</span>
             </div>
+            <!-- Time buttons controlling time -->
             <div class="time-buttons">
-                <button class="start">Start</button>
-                <button class="reset">Reset</button>
+                <button class="start" id="start-timer" onclick="myfunction()">Start</button>
+                <button class="reset" id="reset-timer">Reset</button>
             </div>
         </div>
         <div class="task-container">
@@ -48,5 +49,6 @@
             
         </div>
     </footer>
+    <script src="pomodoro.js"></script>
 </body>
 </html>

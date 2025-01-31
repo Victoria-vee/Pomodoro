@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
     <script src="https://kit.fontawesome.com/5be89bdbaf.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="setting/setting.css">
+    <link rel="stylesheet" href="setting.css">
 </head>
 <body>
     <header>
-        <a href="index.html">Home</a>
-        <a href="why-pomodoro/Why-pomodoro.html">Why Pomodoro</a>
-        <a href="setting/settings.html">Settings</a>
+        <a href="/index.html">Home</a>
+        <a href="/why-pomodoro/Why-pomodoro.html">Why Pomodoro</a>
+        <a href="/setting/settings.html">Settings</a>
         <a href="help.html">Help</a>
         <!-- <i class="fa-solid fa-bars"></i> -->
         <!-- <div class="account-creation">
@@ -35,6 +35,14 @@
         <div class="setting-item">
             <h3>Themes</h3>
             <p>Set the color scheme you want</p>
+            <div class="themes">
+                    <select id="themes">
+                        <option value="purpleparadise" data-theme="purpleparadise" >Purple Paradise</option>
+                        <option value="ocean">Ocean</option>
+                        <option value="vibrant" data-theme="vibrant">Vibrant</option>
+                        <option value="forest" data-theme="forest">Forest</option>
+                    </select>
+            </div>
         </div>
         <div class="setting-item" id="toggle">
             <div class="right">
@@ -55,5 +63,6 @@
             
         </div>
     </footer>
+    <script src="/setting/setting.script"></script>
 </body>
 </html>

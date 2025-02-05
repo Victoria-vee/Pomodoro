@@ -42,29 +42,6 @@ header a:hover{
     
 }
 
-/* .account-creation{
-    display: flex;
-    justify-content: space-between;
-    gap:5px;
-    align-items: center;
-} */
-
-/* #sign-up{
-    padding:5px;
-    border-radius: 5px;
-    background-color: #8c7aa9;
-    border: 1px #502f4c solid;
-    font-size: 20px;
-
-}
-
-#log-in{
-    padding:5px;
-    border-radius: 5px;
-    background-color: #70587c;
-    border: 1px #502f4c solid;
-} */
-
 /* Styling the main container */
 .main-container{
     display:flex;

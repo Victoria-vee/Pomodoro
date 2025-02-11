@@ -115,6 +115,8 @@ h1{
     background-color: #f9f4f5;
     border: 1px #502f4c solid;
     border-radius:5px;
+    display: block;
+    margin: 0 auto;
 }
 
 .tasks{
@@ -122,10 +124,11 @@ h1{
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    padding:20px; 
+    padding:20px 10px 0; 
 }
 
 #task-input{
+    
     border:none;
     border-radius:5px;
     padding:15px;
@@ -148,6 +151,12 @@ h1{
     background-color: #B5A6B9;
 }
 
+/* Styling the horizontal line */
+.horizontal-line{
+    max-width: 100%;
+    border: 1px solid #B5A6B9;
+    margin:20px 10px;
+}
 /* Styling the todo lists */
 ul{
     margin-top: 0px;
@@ -155,26 +164,38 @@ ul{
 }
 
 ul li{
+    flex: 1;
     list-style: none;
     padding: 15px;
     cursor:pointer;
-    margin:30px;
+    margin:0 20px 15px;
     background-color: #FFFCF9; 
-}
-
-ul li.checked{
-    text-decoration: line-through;
-
-}
-
-ul li.checked::before{
-    content: "\f00c";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 800;
-    margin-right: 10px;
+    position:relative;
     
 }
 
+ul li::before{
+    content: "\f14a";
+    font-family: "Font Awesome 6 Free";
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+ul li.checked::before{
+    content: "\f14a";
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.fa-trash{
+   color: #d69191;
+  position: absolute;
+  right:25px;
+
+
+
+}
 /* Styling the buttons */
 .edit:hover{
     cursor: pointer;
@@ -234,12 +255,13 @@ footer{
     gap:20px;
 } 
 
-@media (max-width:768px) {
+@media (max-width:915px) {
     header{
         display:flex;
         justify-content: space-between;
         align-items: start;
         margin-bottom: 35px;
+        padding: 0;
     }
 
     header a{
@@ -257,19 +279,19 @@ footer{
         padding:0;
         border:none;
         background-color: white;
-        
+        max-width: 100%;
     }
 
-    /* .timer-container{
-        border:none;
-    } */
+    .timer-container{
+        max-width: 100%;
+        padding: 0;
+    }
 
     .time{
-        display: flex;
+        /* display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
         font-size: 70px;
-        /* border:1px #502f4c solid; */
         border-radius: 5px;
         background-color: #F3EDF2;
         
@@ -286,8 +308,9 @@ footer{
     }
 
     .task-container{
-        margin-left: 0;
-        /* border:none; */
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
     }
 
     .tasks{

@@ -13,43 +13,43 @@
         <a href="/why-pomodoro/Why-pomodoro.html">Why Pomodoro</a>
         <a href="/setting/settings.html">Settings</a>
         <a href="help.html">Help</a>
-        <!-- <i class="fa-solid fa-bars"></i> -->
-        <!-- <div class="account-creation">
-            <a href="pomodoro-sign-up.html" id="sign-up">Sign Up</a>
-            <a href="pomodoro-log-in.html" id="log-in">Log In</a>
-        </div> -->
     </header>
     <div class="container">
         <div class="setting-item">
-            <h3>Adjust Session</h3>
-            <p>Set how long you want to perform a task</p>
-        </div>
-        <div class="setting-item">
-            <h3>Adjust Short Break</h3>
-            <p>Set how long your short breaks would be</p>
-        </div>
-        <div class="setting-item">
-            <h3>Adjust Long Break</h3>
-            <p>Set how long your long break would be</p>
-        </div>
-        <div class="setting-item">
-            <h3>Themes</h3>
-            <p>Set the color scheme you want</p>
-            <div class="themes">
-                    <select id="themes">
-                        <option value="purpleparadise" data-theme="purpleparadise" >Purple Paradise</option>
-                        <option value="ocean">Ocean</option>
-                        <option value="vibrant" data-theme="vibrant">Vibrant</option>
-                        <option value="forest" data-theme="forest">Forest</option>
-                    </select>
+            <div class="setting-description">
+                <h3>Adjust Session</h3>
+                <p>Set how long you want to perform a task</p>
             </div>
+            <select class="toggle" id="minute-select" onclick="selectminutes()">
+                <option value="1">1 minute</option>
+                <option value="5">5 minutes</option>
+                <option value="15">15 minutes</option>
+                <option value="30">30 minutes</option>
+                <option value="45">45 minutes</option>
+                <option value="60">1 hour</option>
+                <option value="120">2 hour</option>
+            </select>
         </div>
-        <div class="setting-item" id="toggle">
-            <div class="right">
+        <div class="setting-item">
+            <div class="setting-description">
+                <h3>Themes</h3>
+                <p>Set the color scheme you want</p>
+            </div>
+            <select class="toggle" id="themes">
+                <option value="purpleparadise" data-theme="purpleparadise" >Purple Paradise</option>
+                <option value="ocean">Ocean</option>
+                <option value="vibrant" data-theme="vibrant">Vibrant</option>
+                <option value="forest" data-theme="forest">Forest</option>
+            </select>
+        </div>
+        <div class="setting-item">
+            <div class="setting-description">
                 <h3>Light Mode</h3>
                 <p>Toggle to switch to dark mode</p>
             </div>
-            <div class="icon"><i class="fa-solid fa-toggle-off fa-xl"></i></div>
+            <div class="toggle">
+                <i class="fa-solid fa-toggle-off fa-xl"></i>
+            </div>
         </div>
     </div>
     <footer>
@@ -63,6 +63,6 @@
             
         </div>
     </footer>
-    <script src="/setting/setting.script"></script>
+    <script src="setting.js"></script>
 </body>
 </html>

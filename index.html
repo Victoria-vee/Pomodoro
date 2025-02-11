@@ -13,29 +13,33 @@
         <a href="why-pomodoro/Why-pomodoro.html">Why Pomodoro</a>
         <a href="setting/settings.html">Settings</a>
         <a href="help.html">Help</a>
-        <!-- <i class="fa-solid fa-bars"></i> -->
-        <!-- <div class="account-creation">
-            <a href="pomodoro-sign-up.html" id="sign-up">Sign Up</a>
-            <a href="pomodoro-log-in.html" id="log-in">Log In</a>
-        </div> -->
     </header>
     <div class="main-container">
         <div class="timer-container">
             <h1>Round 1</h1>
             <div class="time">
-                <span id="time">25:00</span>
+                <span id="time"></span>
             </div>
             <!-- Time buttons controlling time -->
             <div class="time-buttons">
                 <button class="start" id="start-timer" onclick="myfunction()">Start</button>
                 <button class="reset" id="reset-timer" onclick="resetbutton()">Reset</button>
+               <audio src="mixkit-digital-clock-digital-alarm-buzzer-992.wav" id="alarm"></audio>
             </div>
         </div>
+        <!-- Tasks container -->
         <div class="task-container">
-            <form action="" class="tasks">
-                <label for="task-input"></label>
-                <input type="text" placeholder="Add Task" id="task-input">
-            </form>
+                <div class="tasks">
+                    <input type="text" placeholder="Add Task" id="task-input">
+                    <button class="add" onclick="addtask()">Add</button>
+                </div>
+            <!-- Todo container -->
+           <div class="todo-container">
+               <ul id="todo-list">
+                <li class="checked">Task 1</li>
+                <li>Task 2</li>
+               </ul>
+           </div>
         </div>
     </div>
     <footer>
@@ -50,5 +54,7 @@
         </div>
     </footer>
     <script src="pomodoro.js"></script>
+    <script src="todo.js"></script>
+    
 </body>
 </html>

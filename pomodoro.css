@@ -49,6 +49,7 @@ header a:hover{
     align-items: start;
     padding:30px;
     background-color: #FFFCF9;
+    gap: 30px
     /* border: 1px #502f4c solid; */
     
 }
@@ -110,33 +111,80 @@ h1{
 
 /* Styling Task Container */
 .task-container{
+    flex:1;
     background-color: #f9f4f5;
     border: 1px #502f4c solid;
     border-radius:5px;
-    padding:10px;
-    flex:1;
-    margin-left:30px;
 }
 
 .tasks{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: start;
     align-items: center;
-    padding:20px;
+    padding:20px; 
 }
 
 #task-input{
     border:none;
     border-radius:5px;
     padding:15px;
-    margin:0 30px;
+    margin:0 10px;
     font-size: 20px;
     width: 100%;
     max-width: 100%;
     background-color: #FFFCF9;   
 }
+/* Add button styling */
+.add{
+    background-color: #c2b6bf;
+    border-radius:5px;
+    padding:10px;
+    margin:0 10px;
+    font-size: 20px; 
+}
 
+.add:hover{
+    background-color: #B5A6B9;
+}
+
+/* Styling the todo lists */
+ul{
+    margin-top: 0px;
+    padding-left: 0px;
+}
+
+ul li{
+    list-style: none;
+    padding: 15px;
+    cursor:pointer;
+    margin:30px;
+    background-color: #FFFCF9; 
+}
+
+ul li.checked{
+    text-decoration: line-through;
+
+}
+
+ul li.checked::before{
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 800;
+    margin-right: 10px;
+    
+}
+
+/* Styling the buttons */
+.edit:hover{
+    cursor: pointer;
+}
+
+.delete:hover{
+    cursor: pointer;
+}
+
+/* Styling the footer */
 footer{
     background-color: #f9f4f5;
     display: flex;

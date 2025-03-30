@@ -1,4 +1,3 @@
-
 let time = document.getElementById("time");
 let alarmsound = document.getElementById("alarm")
 let minutes = localStorage.getItem("selectedminutes") || 1;

@@ -18,7 +18,6 @@ header{
     margin-bottom: 10px;
     position:sticky;
     z-index: 1;
-    
 }
 
 header a{
@@ -45,13 +44,12 @@ header a:hover{
 /* Styling the main container */
 .main-container{
     display:flex;
-    justify-content: space-between;
-    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding:30px;
     background-color: #FFFCF9;
     gap: 30px
-    /* border: 1px #502f4c solid; */
-    
 }
 
 /* Styling the timer */
@@ -109,104 +107,6 @@ h1{
     margin:10px;
 }
 
-/* Styling Task Container */
-.task-container{
-    flex:1;
-    background-color: #f9f4f5;
-    border: 1px #502f4c solid;
-    border-radius:5px;
-    display: block;
-    margin: 0 auto;
-}
-
-.tasks{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    padding:20px 10px 0; 
-}
-
-#task-input{
-    
-    border:none;
-    border-radius:5px;
-    padding:15px;
-    margin:0 10px;
-    font-size: 20px;
-    width: 100%;
-    max-width: 100%;
-    background-color: #FFFCF9;   
-}
-/* Add button styling */
-.add{
-    background-color: #c2b6bf;
-    border-radius:5px;
-    padding:10px;
-    margin:0 10px;
-    font-size: 20px; 
-}
-
-.add:hover{
-    background-color: #B5A6B9;
-}
-
-/* Styling the horizontal line */
-.horizontal-line{
-    max-width: 100%;
-    border: 1px solid #B5A6B9;
-    margin:20px 10px;
-}
-/* Styling the todo lists */
-ul{
-    margin-top: 0px;
-    padding-left: 0px;
-}
-
-ul li{
-    flex: 1;
-    list-style: none;
-    padding: 15px;
-    cursor:pointer;
-    margin:0 20px 15px;
-    background-color: #FFFCF9; 
-    position:relative;
-    
-}
-
-ul li::before{
-    content: "\f14a";
-    font-family: "Font Awesome 6 Free";
-    font-weight: normal;
-    margin-right: 10px;
-    opacity: 0.3;
-}
-
-ul li.checked::before{
-    content: "\f14a";
-    font-family: "Font Awesome 6 Free";
-    font-weight: bold;
-    margin-right: 10px;
-    opacity: 1;
-}
-
-.fa-trash{
-   color: #d69191;
-  position: absolute;
-  right:25px;
-
-
-
-}
-/* Styling the buttons */
-.edit:hover{
-    cursor: pointer;
-}
-
-.delete:hover{
-    cursor: pointer;
-}
-
 /* Styling the footer */
 footer{
     background-color: #f9f4f5;
@@ -232,7 +132,6 @@ footer{
 }
 
 .social-handles a{
-
     padding-bottom: 5px;
 }
 
@@ -259,9 +158,6 @@ footer{
 
 @media (max-width:915px) {
     header{
-        display:flex;
-        justify-content: space-between;
-        align-items: start;
         margin-bottom: 35px;
         padding: 0;
     }
@@ -290,13 +186,9 @@ footer{
     }
 
     .time{
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
         font-size: 70px;
         border-radius: 5px;
         background-color: #F3EDF2;
-        
     }
 
     .time-buttons{
@@ -308,18 +200,7 @@ footer{
         padding:5px 15px;
         margin:0px;
     }
-
-    .task-container{
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-    }
-
-    .tasks{
-        padding:10px;
-
-    }
-
+    
     .credits{
         text-align: center;
     }

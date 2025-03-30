@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pomodoro Time</title>
+    <title>Countdown Timer</title>
     <script src="https://kit.fontawesome.com/5be89bdbaf.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="pomodoro.css">
+    <link rel="stylesheet" href="timer.css">
 </head>
 <body>
     <header>
         <a href="index.html">Home</a>
-        <a href="why-pomodoro/Why-pomodoro.html">Why Pomodoro</a>
         <a href="setting/settings.html">Settings</a>
-        <a href="help.html">Help</a>
     </header>
 
     <div class="main-container">
@@ -28,22 +26,6 @@
                <audio src="mixkit-digital-clock-digital-alarm-buzzer-992.wav" id="alarm"></audio>
             </div>
         </div>
-        <!-- Tasks container -->
-        <div class="task-container">
-                <div class="tasks">
-                    <input type="text" placeholder="Add Task" id="task-input">
-                    <button class="add" onclick="addtask()">Add</button>
-                </div>
-                <div class="horizontal-line"></div>
-            <!-- Todo container -->
-           <div class="todo-container">
-               <ul id="todo-list">
-                <!-- <li class="checked">Task 1<i class="fa-solid fa-trash"></i></li>
-                li
-                <li>Task 2</li> -->
-               </ul>
-           </div>
-        </div>
     </div>
     <footer>
         <div class="social-handles">
@@ -56,8 +38,7 @@
             
         </div>
     </footer>
-    <script src="pomodoro.js"></script>
-    <script src="todo.js"></script>
+    <script src="timer.js"></script>
     
 </body>
 </html>

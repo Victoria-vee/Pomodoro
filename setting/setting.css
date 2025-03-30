@@ -10,53 +10,6 @@
     --setting-background-color:#ede5ef; 
 }
 
-/* Option 1 Theme */
-[data-theme="oceanblue"]{
-    --body-background-color:#F0F2EF;
-    --background-color:#2D2C38;
-    --text-color:white;
-    --header-hover-border-color:#a6a39b;
-    --header-hover-background-color:#a6a39b;
-    --container-background-color:#333146;
-    --border-color:#7d9bbd;
-    --setting-background-color:#7d9bbd; 
-}
-
-/* Option 2 Theme */
-[data-theme="vibrant"]{
-    --body-background-color:#fffbfb;
-    --background-color:#f7d6b0;
-    --text-color:#170f11;
-    --header-hover-border-color:#d1b978;
-    --header-hover-background-color:#d1b568;
-    --container-background-color:#ac3e3e;
-    --border-color:#bd5858;
-    --setting-background-color:#e06767; 
-} 
-
-/* Option 3 */
-[data-theme="forest"]{
-    --body-background-color:#f0f0f0;
-    --background-color:#2f4f4f;
-    --text-color:#f0f0f0;
-    --header-hover-border-color:#3e8e41;
-    --header-hover-background-color:#3e8e41;
-    --container-background-color:#3e8e41;
-    --border-color:#3e8e41;
-    --setting-background-color:#2f4f4f;
-}
-
-/* Dark mode */
-[data-theme="dark"]{ 
-    --body-background-color:#1a1a1a;
-    --background-color:#1a1a1a;
-    --text-color:#f0f0f0;
-    --header-hover-border-color:#1f2525;
-    --header-hover-background-color:#0f1314;
-    --container-background-color:#0b060e;
-    --border-color:#111311;
-    --setting-background-color:#13111a;
-}
 /* CSS Reset */
 body{
     margin:0;
@@ -104,9 +57,6 @@ header a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border:1px var(--border-color) solid;
-    border-radius: 5px;
-    background-color: var(--container-background-color);
     padding: 30px 40px 0;
     margin: 40px;
 }
@@ -157,9 +107,12 @@ footer{
     justify-content: center;
     align-items: center;
     gap:5px;
-    margin-top:50px;
-    margin-bottom: 15px;
-    padding:70px 30px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0 5px;
+    max-width: 100%;
     font-size: 10px;
 }
 

@@ -1,0 +1,164 @@
+/* CSS Reset */
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    color:#170f11;
+    background-color: white;
+}
+ 
+
+
+/* Styling Task Container */
+.task-container{
+    background-color: #f9f4f5;
+    border: 1px #502f4c solid;
+    border-radius:5px;
+    display: block;
+    margin: 50px;
+}
+
+.tasks{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding:20px 10px 0; 
+}
+
+#task-input{
+    
+    border:none;
+    border-radius:5px;
+    padding:15px;
+    margin:0 10px;
+    font-size: 20px;
+    width: 100%;
+    max-width: 100%;
+    background-color: #FFFCF9;   
+}
+
+/* Add button styling */
+.add{
+    background-color: #c2b6bf;
+    border-radius:5px;
+    padding:10px;
+    margin:0 10px;
+    font-size: 20px; 
+}
+
+.add:hover{
+    background-color: #B5A6B9;
+}
+
+/* Styling the horizontal line */
+.horizontal-line{
+    max-width: 100%;
+    border: 1px solid #B5A6B9;
+    margin:20px 10px;
+}
+/* Styling the todo lists */
+ul{
+    margin-top: 0px;
+    padding-left: 0px;
+}
+
+ul li{
+    flex: 1;
+    list-style: none;
+    padding: 15px;
+    cursor:pointer;
+    margin:0 20px 15px;
+    background-color: #FFFCF9; 
+    position:relative;
+    
+}
+
+ul li::before{
+    content: "\f14a";
+    font-family: "Font Awesome 6 Free";
+    font-weight: normal;
+    margin-right: 10px;
+    opacity: 0.3;
+}
+
+ul li.checked::before{
+    content: "\f14a";
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    margin-right: 10px;
+    opacity: 1;
+}
+
+.fa-trash{
+  color: #d69191;
+  position: absolute;
+  right:25px;
+
+
+
+}
+/* Styling the buttons */
+.edit:hover{
+    cursor: pointer;
+}
+
+.delete:hover{
+    cursor: pointer;
+}
+
+/* Styling the footer */
+footer{
+    background-color: #f9f4f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0 5px;
+    margin-top:50px;
+    font-size: 10px;
+}
+
+.social-handles{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: left;
+    gap:5px;
+    line-height: 0.5px;
+    letter-spacing: 0.5px;
+    font-size:12px;
+}
+
+.social-handles a{
+
+    padding-bottom: 5px;
+}
+
+.social-handles a:link{
+    text-decoration: none;
+    color: #170f11;
+}
+
+.social-handles a:visited{
+    text-decoration: none;
+    color:#170f11;
+}
+
+.fa-brands{
+    padding-right:3px;
+}
+
+.credits{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+} 
+
